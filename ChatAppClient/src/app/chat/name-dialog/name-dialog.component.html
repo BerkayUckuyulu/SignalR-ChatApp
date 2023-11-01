@@ -1,0 +1,9 @@
+<div style="padding: 1.5rem;">
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" [(ngModel)]="name" placeholder="Nick Name"
+            aria-label="Recipient's username" aria-describedby="button-addon2">
+    </div>
+    <div style="text-align: end;">
+        <button class="btn btn-success" [mat-dialog-close]="name" (click)="SetName(name)" cdkFocusInitial>Enter</button>
+    </div>
+</div>
